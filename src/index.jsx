@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 
-const Square = (props) => {
+export const Square = (props) => {
   return (
     <button
       className="square" onClick={props.onClick}>
@@ -11,7 +11,7 @@ const Square = (props) => {
   );
 }
 
-const Board = (props) => {
+export const Board = (props) => {
   const renderSquare = (i) => {
     return (
       <Square
@@ -42,7 +42,7 @@ const Board = (props) => {
   );
 }
 
-const Game = () => {
+export const Game = () => {
   const [history, setHistory] = useState([{squares: Array(9).fill(null)}]);
   const [stepNumber, setStepNumber] = useState(0);
   const [xIsNext, setXIsNext] = useState(true);
