@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Board } from '../index';
+import { Board } from '../components/Board';
 
 export default {
     title: 'React-Tutorial/Board',
