@@ -35,7 +35,9 @@ export const Game = () => {
     }
 
     squares[i] = xIsNext ? 'X' : 'O';
-    setHistory(history.concat([{
+
+    // 履歴を追加する
+    setHistory(newHistory.concat([{
       squares: squares,
     }]));
     setStepNumber(newHistory.length);
