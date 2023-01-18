@@ -13,7 +13,7 @@ export const Game = () => {
   if (winner) {
     status = 'Winner: ' + winner;
   } else {
-    status = 'Next player: ' + (xIsNext ? 'X' : 'O');
+    status = '次のプレイヤー: ' + (xIsNext ? 'X' : 'O');
   }
   const moves = history.map((step, move) => {
     const desc = move ?
