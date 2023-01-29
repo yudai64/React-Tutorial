@@ -12,8 +12,10 @@ export const Game = () => {
   let status;
   if (winner) {
     status = 'Winner: ' + winner;
-  } else {
+  } else if (stepNumber < 9) {
     status = '次のプレイヤー: ' + (xIsNext ? 'X' : 'O');
+  } else {
+    status = 'Draw!';
   }
   const moves = history.map((step, move) => {
     const desc = move ?
